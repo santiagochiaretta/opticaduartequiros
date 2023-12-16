@@ -1,0 +1,120 @@
+.cart-view-container {
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.cart-view-container h1 {
+  font-size: 1.7rem;
+  text-align: center;
+  margin: 0;
+  padding: 0 0 20px 0;
+  cursor: default;
+  transition: all 0.3s ease;
+}
+
+.cart-view-container h1:hover {
+  color: #008080;
+  transform: scale(1.1);
+}
+
+.cart-view-items {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.cart-product {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  border-bottom: 1px solid #777777;
+  padding: 10px 0;
+}
+
+.cart-product img {
+  justify-self: center;
+  align-self: center;
+  width: 90px;
+  height: 60px;
+  object-fit: cover;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.cart-product img:hover {
+  border: 1px solid #008080;
+  border-radius: 5px;
+  transform: scale(3);
+}
+
+.cart-name,.cart-quantity {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #333333;
+}
+
+.cart-price {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #008080;
+}
+
+.cart-product span {
+  cursor: pointer;
+}
+
+.cart-btn-empty {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 7px 14px;
+  background-color: #333333;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.cart-btn-empty:hover {
+  background-color: #ff7f7f;
+}
+
+.cart-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 7px 14px;
+  background-color: #333333;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.cart-btn:hover {
+  background-color: #008080;
+}
+
+.cart-view-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-view-empty h2 {
+  color: #949494;
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 0;
+  padding: 30px 0 50px 0;
+  cursor: default;
+  transition: all 0.3s ease;
+}

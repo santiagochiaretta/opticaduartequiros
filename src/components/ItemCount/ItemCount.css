@@ -1,0 +1,38 @@
+.counter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.counter-container p {
+  color: black;
+  font-size: 1rem;
+}
+
+.counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.counter span {
+  color: black;
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.counter-btn {
+  display: inline-block;
+  padding: 3px 6px;
+  background-color: #333333;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.counter-btn:hover {
+  background-color: #777777;
+}

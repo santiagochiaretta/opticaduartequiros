@@ -1,0 +1,29 @@
+.item-detail-container {
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.item-detail-container h1 {
+  font-size: 1.7rem;
+  text-align: center;
+  margin: 0;
+  padding: 0 0 20px 0;
+  cursor: default;
+  transition: all 0.3s ease;
+}
+
+.item-detail-container h1:hover {
+  color: #008080;
+  transform: scale(1.1);
+}
+
+.item-detail-product {
+  width: 350px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

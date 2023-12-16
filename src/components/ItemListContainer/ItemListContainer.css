@@ -1,0 +1,54 @@
+.spinner {
+  margin: 5% auto;
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border-left-color: #000f;
+
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.item-list-container {
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.item-list-container h1 {
+  font-size: 1.7rem;
+  text-align: center;
+  margin: 0;
+  padding: 0 0 20px 0;
+  cursor: default;
+  transition: all 0.3s ease;
+}
+
+.item-list-container h1:hover {
+  color: #008080;
+  transform: scale(1.1);
+}
+
+.card-container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(calc(33.3% - 20px), 1fr));
+  min-width: 250px;
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
